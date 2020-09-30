@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Patua+One&family=Roboto+Slab&display=swap');
+body {
+  margin: 0;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: Georgia, 'Times New Roman', Times, serif
+}
+
+#brand{
+  font-family: Acme,sans-serif;
+}
+
+#courses{
+  overflow-x: auto;
+  text-align: left;
+}
+
+#courselistImg{
+  width: 100%;
+  height: 400px;
+}
+
+#courseImg{
+  width: 17rem;
+  height: 11rem;
+}
+
+#courses::-webkit-scrollbar { width: 0 !important }
+
+#course h6{
+  margin: 0px;
+}
+
+#course p{
+  margin: 0px;
+}
+
+#courseh3{
+  font-family: 'Roboto Slab', serif;
+}
+
+#navlink{
+  font-weight: bolder;
+}
+
+#aboutus{
+  font-family: 'Patua One', cursive;
+}
+
+#footer{
+  justify-content: center;
+}
+
+#footercontent{
+  display: flex;
+  flex-direction: column;
+  margin: 2rem 2rem;
+}
+
