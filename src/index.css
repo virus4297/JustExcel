@@ -1,0 +1,374 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Patua+One&family=Roboto+Slab&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&display=swap&family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arvo&family=Libre+Baskerville&family=Vidaloka&display=swap');
+body {  font-family: Georgia, 'Times New Roman', Times, serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+/* Home Page CSS */
+
+code {
+  font-family: Georgia, 'Times New Roman', Times, serif
+}
+
+#about{
+  margin: 2rem;
+}
+
+#aboutus{
+  font-family: 'Patua One', cursive;
+}
+
+#brand{
+  text-decoration: none;
+  color: rgb(72, 105, 214);
+  margin-top: 10px;
+  margin-left: 1rem;
+  font-size: 2rem;
+  font-family: 'Righteous', cursive;
+}
+
+#courses{
+  overflow-x: auto;
+  text-align: left;
+}
+
+#courselistImg{
+  width: 17rem;
+  height: 11rem;
+  margin-bottom: 5px;
+}
+
+#courses::-webkit-scrollbar { width: 0 !important }
+
+#course{
+  color: black;
+}
+
+#course h6{
+  font-family: 'Roboto Slab', serif;
+  font-weight: bold;
+  margin: 0px;
+}
+
+#course p{
+  font-family: 'Roboto Slab', serif;
+  margin: 0px;
+}
+
+#courseh3{
+  margin-top: 2.5rem;
+  font-weight: bolder;
+  font-family: 'Roboto Slab', serif;
+}
+
+#navlink{
+  text-decoration: none;
+  color: rgb(72, 105, 214);
+  margin: 5px 0px;
+  margin-right: 1.2rem;
+  padding: 1px 10px;
+  border: solid black 1px;
+  border-radius: 7px;
+  font-weight: bolder;
+}
+
+#footer{
+  color: white;
+  background-color: rgb(61, 90, 187);
+  padding: 1.5rem;
+  justify-content: center;
+}
+
+#wrapper {
+  position:relative;
+  
+}
+
+#image{
+  /* border-bottom: solid rgb(169, 178, 255) 1px;
+  border-right: solid lightskyblue 1px; */
+  position: relative;
+  width: 99%;
+}
+
+#searchBtn{
+  background-color:rgb(72, 105, 214);
+}
+
+#searchForm{
+  width: 25%;
+}
+
+@media(max-width:767px)
+{
+  #searchForm{
+    width: 85%;
+  }
+  #navlink{
+    
+    border: solid grey 1px;
+  }
+}
+
+#ImageText{
+  color: rgb(45, 69, 151);
+  font-size: 3rem;
+  font-family: 'Righteous', cursive;
+  display: block;
+}
+
+@media (max-width: 938px) 
+{
+  #ImageText
+  {
+    position: absolute;
+    margin-top: 3rem;
+    left: 2.5rem;
+    font-size: 1rem;
+  }
+}
+
+
+
+/* SignUp Page CSS*/
+
+
+#container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#Label{
+  margin: 0px;
+  margin-right: 6%;
+  color:  rgb(46, 93, 247);
+  font-family: 'Patua One', cursive;
+  font-size: x-large;
+}
+
+#Heading{
+  margin: 0px;
+  margin-top: 4%;
+  margin-right: 6%;
+  color: rgb(61, 90, 187);
+  font-family: 'Righteous', cursive;
+  font-size: xx-large;
+}
+
+#signupform{
+  padding: 1rem;
+  text-align: left;
+  /* border: 1px solid rgb(61, 90, 187);
+  border-radius: 10px; */
+  width: 28%;
+}
+
+label{
+  font-family: 'Patua One', cursive;
+  font-size: large;
+  color:  rgb(46, 93, 247);
+  margin-left: 1rem;
+}
+
+#name,#email,#password{
+  width:75%;
+  align-items: flex-end;
+  margin-left: 10px;
+  border: 1px solid rgb(61, 90, 187);
+  border-radius: 5px;
+}
+
+#signupbtn{
+  font-family: 'Patua One', cursive;
+  margin-top: 5px;
+  margin-left: 13px;
+  background-color:  rgb(46, 93, 247);
+}
+
+#signupError{
+  color: red;
+  font-size: smaller;
+  text-align: left;
+  margin-bottom: 10px;
+  margin-left: 15px;
+}
+
+#loginlink{
+  text-decoration: none;
+  font-size: medium;
+  margin-right: 7%;
+}
+
+@media (max-width: 938px) 
+{
+  #signupform{
+    width: 50%;
+  }
+  #name,#email,#password{
+    width: 100%;
+  }
+}
+
+
+/* Login Form */
+
+#loginform{
+  padding: 1rem;
+  text-align: left;
+  /* border: 1px solid rgb(61, 90, 187);
+  border-radius: 10px; */
+  width: 28%;
+}
+
+#singuplink{
+  text-decoration: none;
+  font-size: medium;
+  margin-right: 7%;
+}
+
+#Loginemail,#Loginpassword{
+  width:75%;
+  align-items: flex-end;
+  margin-left: 13px;
+  border: 1px solid rgb(61, 90, 187);
+  border-radius: 5px;
+}
+
+#loginError{
+  color: red;
+  font-size: smaller;
+  text-align: left;
+  margin-bottom: 10px;
+  margin-left: 15px;
+}
+
+@media (max-width: 938px) 
+{
+  #loginform{
+    width: 60%;
+  }
+  #name,#email,#password{
+    width: 100%;
+  }
+}
+
+
+/* Student Dashboard */
+
+#dashnavbar{
+  background-color:  rgb(61, 90, 187);
+  padding:20px;
+}
+
+#dashtoggler{
+  background-color: white;
+}
+
+#dashlink{
+  color: white;
+  background-color:  rgb(61, 90, 187);
+  border: 0px;
+  margin-top: 0.2rem;
+  margin-left: 16px;
+  font-size: 0.9rem;
+  font-family: 'Libre Baskerville', serif;
+}
+
+#dashname{
+  color: white;
+  background-color:  rgb(61, 90, 187);
+  border: 0px;
+  margin-left: 16px;
+  font-size: 17px;
+  font-family: 'Libre Baskerville', serif;
+}
+
+#notification{
+  color: white;
+  background-color:  rgb(61, 90, 187);
+  border: 0px;
+  font-size: 17px;
+  margin-left: 16px;
+}
+
+#dashbtn{
+  border: white solid 1px;
+  color: white;
+  background-color:  rgb(61, 90, 187);
+}
+
+#profileCard{
+  float: right;
+  width: 23%;
+  font-weight: 400;
+  text-align: left;
+  margin-right: 2%;
+  margin-top: 3%;
+  border: 1px solid rgb(61, 90, 187);
+  padding: 10px;
+  box-shadow: 5px 5px rgb(61, 90, 187);
+}
+
+@media (max-width: 938px) 
+{
+
+  #dashname{
+    font-size: medium;
+  }
+
+  #profileCard{
+    position: relative;
+    top: 0px;
+    float: left;
+    width: auto;
+    margin: 1rem;
+    margin-left: 2rem;
+  }
+
+  #notification{
+    font-size:17px;
+  }
+}
+
+/* #enrollcourse{
+  float: left;
+  margin-top: 1.6rem;
+  margin-left: 2rem;
+  font-family: 'Vidaloka', serif;
+} */
+
+#courseContainer{
+  width: 60%;
+  margin: 2rem;
+  text-align: left;
+}
+
+@media (max-width: 938px) {
+
+  #coursecontainer{
+    width: 100%;
+  }
+}
+
+
+#dashCourseHeading{
+  margin-top: 10px;
+  padding: 2%;
+  font-size: large;
+  color: white;
+  background-color: rgb(61, 90, 187);
+  font-family: 'Libre Baskerville', serif;
+}
+
+#courseName{
+  padding-top: 1%;
+  color: black;
+  text-decoration: none;
+  font-size: large;
+  font-family: 'Patua One', cursive;
+}
