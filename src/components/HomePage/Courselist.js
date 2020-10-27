@@ -12,41 +12,35 @@ const Items = [
 const Courselist = (props) => {
     return (
         <div>
-            <img src='https://www.onlineseminar.nl/Portals/0/EasyDNNnews/15/img-online-test-final-afbeelding.jpg' id="courselistImg" alt='...' />
-            <h3 className="ml-3 mt-5 float-left" id="courseh3">Choose from large variety of courses</h3>
-            <div className="d-flex w-100" id='courses' >
+            
+            <h2 className="ml-4 float-left" id="courseh3">Choose from large variety of courses</h2>
+            <div className="d-flex w-100" id='courses'>
                 {
                     Items.map(item => (
-                        <div className='m-3' id="course" key={item.id} >
-                            <img src={item.CourseImg} id="courseImg" alt="..." />
+                        <a href="/course" className='m-4' id="course" key={item.id} >
+                            <img src={item.CourseImg} id="courselistImg" alt="..." />
                             <h6>{item.CourseName}</h6>
-                            <p style={{ color: "grey" }}>{item.instructor}</p>
-                            <h6 style={{ color: "grey" }}>Rs.{item.CoursePrice}</h6>
-                        </div>
+                            <p>{item.instructor}</p>
+                            <p >Rs.{item.CoursePrice}</p>
+                        </a>
                     ))
                 }
             </div>
+            <hr className="w-75 mb-5" color="lightblue"/>
             <div id="aboutus">
                 <h2>About Us</h2>
-            </div>
-            <hr />
-            <div id="footer" className="d-flex">
-                <div id="footercontent">
-                    <h6>Top Courses</h6>
-                    <a href="/">Python</a>
-                    <a href="/">React.js</a>
-                    <a href="/">Java</a>
-                </div>
-                <div id="footercontent" >
-                    <h6>More</h6>
-                    <a href="/">Terms</a>
-                    <a href="/">Privacy</a>
-                    <a href="/">Contact Us</a>
-                    <a href="/">Help</a>
-                    
+                <div id="about">
+                    Quis cillum laborum adipisicing culpa ut aliqua anim laboris velit culpa proident.
+                    Proident nostrud do ut sit in labore labore incididunt eiusmod ex cillum est qui. 
+                    Laboris cillum anim occaecat cupidatat reprehenderit excepteur ipsum officia dolor tempor. 
+                    Consequat mollit nulla tempor velit eu pariatur aliqua ea anim pariatur dolor cillum amet Lorem. 
+                    Occaecat ad dolore in tempor occaecat duis adipisicing. Qui in irure alicat.
                 </div>
             </div>
+
+            <div id="footer">
             <h6>&copy; 2020 Excel Inc. All rights reserved.</h6>
+            </div>
         </div>
     );
 }
